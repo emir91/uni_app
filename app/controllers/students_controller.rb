@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
     @student = Student.new(student_params)
     if @student.save
       flash[:notice] = "Welcome to Tech University"
-      redirect_to root_path
+      redirect_to @student
     else
       render 'new'
     end
