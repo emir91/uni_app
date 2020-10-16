@@ -17,3 +17,29 @@ body {
   .sign-up-form{
     padding-top: 30px;
   }
+
+  .jumbotron{
+    background-image: asset-url("ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 425px;
+    color: white;
+  }
+
+  .jumbotron-title{
+    text-align: center;
+  }
+
+  .empty-space{
+    height: 256px;
+  }
+
+  .btn-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn{
+    text-align: center;
+  }
