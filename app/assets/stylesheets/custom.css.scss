@@ -18,6 +18,10 @@ body {
     padding-top: 30px;
   }
 
+  #home{
+    background-color: #000;
+  }
+
   .jumbotron{
     background-image: asset-url("ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
     background-position: center center;
@@ -25,6 +29,8 @@ body {
     background-size: cover;
     height: 425px;
     color: white;
+    margin-top: -20px;
+    border-radius: 10px;
   }
 
   .jumbotron-title{
@@ -38,6 +44,7 @@ body {
   .btn-container{
     display: flex;
     justify-content: center;
+    
   }
 
   .btn{
