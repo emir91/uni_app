@@ -18,7 +18,7 @@
         <% if logged_in? && !(current_user.courses.include?(course))%>
          <%= link_to "Enroll", course_enroll_path(course_id: course.id), method: :post %>
         <% end %>
-          <a href="#">Info</a>
+          
         </div>
       </div>
     </div>
