@@ -1,24 +1,19 @@
-# README
+# TECH UNIVERSITY
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is CRUD application done in Rails 5.
 
-Things you may want to cover:
+Idea is that user can register and enroll in courses that are available on Tech University.
 
-* Ruby version
+He can see some information about courses and edit his profile.
 
-* System dependencies
+Things that I have covered:
 
-* Configuration
+* CRUD actions
 
-* Database creation
+* Authentication system
 
-* Database initialization
+* Materialize CSS
 
-* How to run the test suite
+* Many to many database relation 
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is the first version, so I will add some new features to this application.
