@@ -18,7 +18,15 @@
 //= require_tree .
 
 $(document).on('turbolinks:load',function(){
-    $(".dropdown-trigger").dropdown();
     $('.sidenav').sidenav();
+    $(".dropdown-trigger").dropdown();
     $('#fade-out-target').fadeOut(3000);
 })
+
+document.addEventListener('turbolinks:before-render', () => {
+    const elem = document.querySelector('.sidenav');
+    const instance = M.Sidenav.getInstance(elem);
+    if (instance) {
+      instance.destroy();
+    }
+  });

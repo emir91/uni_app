@@ -5,12 +5,7 @@
         <li><%= link_to "profile", student_path(current_user) %></li>
       <% end %>
     </ul>
-    <ul id="dropdown2" class="dropdown-content">
-      <li><%= session_link %></li>
-      <% if logged_in? %>
-        <li><%= link_to "profile", student_path(current_user) %></li>
-      <% end %>
-     </ul>
+    
     <nav>
       <div class="nav-wrapper container">
         <%= link_to 'Tech University', root_path, class: "brand-logo right"%>
@@ -27,7 +22,7 @@
           <% if logged_in?%>
           <li><%= link_to 'Students', students_path%></li>
           <% end %>
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Account<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
       </div>
     </nav>
