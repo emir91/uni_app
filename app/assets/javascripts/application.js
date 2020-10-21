@@ -18,12 +18,12 @@
 //= require_tree .
 
 $(document).on('turbolinks:load',function(){
-    $('.sidenav').sidenav();
     $(".dropdown-trigger").dropdown();
+    $('.sidenav').sidenav();
     $('#fade-out-target').fadeOut(3000);
 })
 
-document.addEventListener('turbolinks:before-render', () => {
+document.addEventListener('turbolinks:before-cache', () => {
     const elem = document.querySelector('.sidenav');
     const instance = M.Sidenav.getInstance(elem);
     if (instance) {
